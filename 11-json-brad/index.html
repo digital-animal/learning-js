@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Sandbox</title>
+</head>
+<body>
+    <ul id="people"></ul>
+
+    <script>
+        // var person = {
+        //     name: "Zahid",
+        //     age: 29,
+        //     // email: function() {
+        //     //     return "zahidulislam.jewel@gmail.com"
+        //     // }
+        //     address: {
+        //         road: 11,
+        //         area: "Banani",
+        //         city: "Dhaka",
+        //         country: "Bangladesh"
+        //     },
+        //     programming: ["C","C++","Java","Python","JS"]
+        // }
+        // // console.log(person.name);
+        // // console.log(person["name"]);
+        // // console.log(person);
+        // // console.log(typeof person)
+        // // var personJSON = JSON.stringify(person);
+        // // console.log(personJSON);
+        // // console.log(typeof personJSON);
+        // // console.log(person.email());
+        // // console.log("\n");
+        // // var newPerson = JSON.parse(personJSON);
+        // // console.log(newPerson);
+        // // console.log(typeof newPerson);
+
+        // // console.log(person.address.road);
+        // // console.log(person.programming[2]);
+
+        var people = [
+            {
+                name: "Brad",
+                age: 35
+            },
+            {
+                name: "Tuhin",
+                age: 28
+            },
+            {
+                name: "Sara",
+                age: 25
+            }
+        ];
+
+        console.log(people[1]);
+        console.log(people[2].name);
+        console.log(people[2].age);
+
+        var output = '';
+        for(var i=0;i<people.length;i++){
+            // console.log(people[i].name, people[i].age);
+            // output += `<li>${people[i].name}<li>`;
+            output += "<li>"+people[i].name+"<li>";
+        }
+
+        document.getElementById("people").innerHTML = output;
+    </script>
+</body>
+</html>

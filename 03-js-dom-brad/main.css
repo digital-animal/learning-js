@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100vh;
+
+    font-family: monospace;
+    background-color: #fff;
+    color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid #eee;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    min-width: 450px;
+} 
+
+header {
+    flex: 1;
+    flex-basis: 80px;
+    background-color: #4CA950;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+header h1 {
+    flex: 4;
+    padding: 0 10px 0 20px;
+    font-size: 36px;
+    margin-right: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header input {
+    flex: 1;
+    height: 30px;
+
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    padding: 5px 8px;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: #ddd;
+}
+
+header input:focus {
+    background-color: #fff;
+}
+
+main {
+    flex: 1;
+    flex-basis: 400px;
+
+    padding: 10px 20px;
+    border: 1px solid #eee;
+
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+main h2 {
+
+    font-weight: 800;
+    font-size: 24px;
+}
+
+form {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+form input {
+    border-radius: 4px;
+    padding: 7px;
+    height: auto;
+}
+form input[type=text] {
+    flex: 3;
+
+    margin-right: 5px;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0,0,0,.3);
+}
+form input[type=text]:focus {
+    background-color: #fff;
+}
+form select {
+    margin-left: 3px;
+    margin-right: 5px;;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+}
+form input[type=submit] {
+    flex: 1;
+
+    color: #f4f4f4;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgba(0,0,0,.2);
+    font-family: monospace;
+    font-size: 18px;
+}
+form input[type=submit]:hover {
+    background-color: #111;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    border: 1px solid #eee;
+    margin-top: auto;
+
+} 
+ul li {
+    display: block;
+    /* line-height: auto; */
+    padding: 20px 20px;
+    border: 1px solid #eee;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ul li:hover {
+    background-color: #eee;
+}
+
+ul li button {
+    display: inline-flex;
+    float: right;
+    height: 25px;
+    background-color: rgb(228, 80, 109);
+    border: 1px solid rgba(0,0,0,.2);
+    color: #f4f4f4;
+}

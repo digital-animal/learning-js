@@ -1,0 +1,53 @@
+body {
+    background: skyblue;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+div.card {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+}
+
+form > input[type="text"] {
+    flex-basis: 400px;
+    flex-direction: 1;
+}
+
+.card-action > form:nth-child(1) > input:nth-child(2) {
+    flex-basis: 100px;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: #4CA950;
+}
+    
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.clear-tasks {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    color: #f4f4f4;
+    background-color: #F63232;
+    border-radius: 10px;
+    transition: 150ms ease-in;
+}
+a.clear-tasks:hover {
+    background-color: #f85050;
+    transition: 150ms ease-in;
+}

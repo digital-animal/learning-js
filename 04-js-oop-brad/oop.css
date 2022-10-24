@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: monospace;
+}
+
+header {
+    /* codes */
+}
+
+header h1 {
+    padding: 50px;
+    border: 2px solid crimson;
+    margin: 50px;
+    font-size: 36px;
+}

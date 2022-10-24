@@ -1,0 +1,30 @@
+body {
+    font-family: monospace;
+    font-size: 24px;
+    color: #272727;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.error {
+    padding: 10px;
+    color: #f4f4f4;
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+.success {
+    padding: 10px;
+    color: black;
+    background-color: #4CA950;
+    border: 1px dotted black;
+}
+
+.test {
+    color: seagreen;
+    background-color: orangered ;
+}
